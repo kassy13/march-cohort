@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 5rem;
+  padding-left: 3rem;
+}
+header {
+  background-color: blue;
+  padding: 1rem;
+}
+nav {
+  background-color: black;
+}
+section {
+  background-color: rgba(0, 0, 0, 0.478);
+  background-image: url(/images/team2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* background-attachment: fixed; */
+  background-blend-mode: overlay;
+  height: 700px;
+  color: white;
+}
+section p {
+  padding: 3rem;
+  /* border:  border-width border-style boder-color ; */
+  /* border: 10px solid pink; */
+  /* border-width: 10px;
+  border-color: pink;
+  border-style: solid; */
+  font-family: "Titillium Web", sans-serif;
+}
+section p:hover {
+  border-bottom: 2px solid black;
+}
+section a {
+  background-color: brown;
+  /* color: white; */
+  color: rgba(0, 255, 255, 0.493);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: 900;
+  font-style: oblique;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.circle {
+  width: 500px;
+  height: 500px;
+  /* background-color: rgba(0, 0, 255, 0.345); */
+  /* background-image: linear-gradient(diretion, color1, color2); */
+  /* background-image: radial-gradient(shape, color1, color2); */
+  /* background-image: linear-gradient(to top, blue, green, yellow); */
+  background-image: radial-gradient(ellipse, red, black, pink);
+  filter: blur(30px);
+  border-radius: 50%;
+  box-shadow: -10px -10px 3px yellow;
+  cursor: not-allowed;
+}
+section img {
+  /* filter: grayscale(1); */
+  /* filter: invert(1); */
+  /* filter: blur(3px); */
+  filter: brightness(10%);
+}
+.unit {
+  /* background-color: chocolate; */
+  border: 3px solid rgb(72, 255, 0);
+  height: 500px;
+  width: 500px;
+  width: 100%;
+  /* height: 900px; */
+}
+/* Block level and inline elements */
+/* Blocklevel elements:takes the full width of your browser eg headerelement, sectionm, main, div,p  */
+/* Inline elements takes the available space they need eg inputs, anchors, buttons,textaea */
+.heightCalc {
+  width: 50%;
+  height: 400px;
+  background-color: black;
+  color: white;
+}
+.unit p {
+  background-color: aqua;
+}
+.unit a,
+.unit p,
+.unit input,
+.unit div {
+  background-color: yellow;
+}
+.widthcalc {
+  background-color: blueviolet;
+  /* width: 900px; */
+  width: 100%;
+  /* 638px */
+  /* height: 400px; */
+}
+.widthChild {
+  width: 50vw;
+  height: 100vh;
+  background-color: crimson;
+  overflow-y: scroll;
+  /* font-size: 3rem;  */
+}
+
+.body-img {
+  width: 700px;
+  height: 500px;
+  background-color: aqua;
+}
+.body-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  opacity: 0.5;
+}
+/* Box model */
+.box-one {
+  background-color: red;
+  font-size: 24px;
+  width: 500px;
+  height: 300px;
+  /* padding: 30px 5px 10px 20px; */
+  /* padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 5px; */
+  /* padding-inline: 50px 10px;
+  padding-block: 10px 5px;
+  border: 30px solid black;
+  border-left: 20px solid black;
+  border-top: 10px dashed yellow;
+  margin: 30px 5px 10px 20px;
+  margin-left: 300px; */
+  /* margin: 30px; */
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 30px;
+  text-align: justify;
+  text-decoration: wavy;
+  text-shadow: 5px 1px 5px pink;
+  text-transform: uppercase;
+  /* transform: rotate(90deg); */
+}
+.box-one:hover {
+  transform: scale(1.5);
+  transform: skew(-10deg);
+  transform: translate(300px);
+}
+.box-two {
+  background-color: rgb(0, 17, 255);
+  font-size: 24px;
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  margin-left: 800px;
+  text-align: center;
+}

@@ -1,0 +1,126 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --my-orange-color: rgb(168, 67, 4);
+  --mySecondcolor: rgb(175, 16, 164);
+  --myFontSize: 2rem;
+}
+/* Element selector*/
+h1 {
+  background-color: var(--mysecondcolor);
+  color: rgb(47, 147, 255);
+  border: 2px solid rgb(48, 29, 29);
+  margin-bottom: 30px;
+}
+
+/* class selector */
+.similar {
+  background-color: black;
+  color: wheat;
+}
+h1 .Word {
+  color: red;
+}
+
+.btn {
+  padding: 1rem;
+  font-size: var(--myFontSize);
+}
+.btn-login {
+  background-color: aquamarine;
+}
+.btn-register {
+  background-color: blueviolet;
+}
+#similar-h1 {
+  background-color: chartreuse;
+}
+.group {
+  border: 1px dashed brown;
+}
+/* Descendant combinator */
+/* .group p {
+  background-color: crimson;
+  color: white;
+} */
+/* child combinators */
+/* .group > div > p {
+  background-color: crimson;
+  color: white;
+} */
+
+/* group selector */
+/* .group > h1,
+.group > p {
+  background-color: coral;
+  color: brown;
+} */
+
+/* Adjacent simbling combinator */
+.group > h2 + p {
+  background-color: coral;
+  color: brown;
+}
+
+/* Pseudo classes */
+.psuedo {
+  margin: 4rem;
+}
+.psuedo a {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.psuedo a:hover {
+  background-color: aqua;
+  color: black;
+  border-radius: 50%;
+}
+/* a:link  ==> targets unvisited links*/
+/* .psuedo a:link {
+  background-color: brown;
+} */
+
+/* a:visited  ==> targets visited links*/
+/* .psuedo a:visited {
+  background-color: brown;
+} */
+
+/* a:link  ==> targets unvisited links*/
+.psuedo a:active {
+  background-color: rgb(75, 165, 42);
+}
+.psuedo input {
+  border: 2px solid yellow;
+}
+.psuedo input:disabled {
+  border: 10px solid var(--my-orange-color);
+  padding: 30px;
+  cursor: not-allowed;
+}
+body {
+  margin: 5rem;
+}
+/* :root */
+/* .of-child :last-child {
+  background-color: black;
+  color: white;
+}
+.of-child :first-child {
+  background-color: black;
+  color: white;
+}
+.of-child :nth-child(3) {
+  background-color: brown;
+} */
+
+.of-child p:nth-of-type(2) {
+  background-color: aquamarine;
+}
+
+/* View port, hero section */
